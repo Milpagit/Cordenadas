@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coordenadas desde Excel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Obtener Coordenadas desde Excel</h1>
+      <input type="file" id="fileInput" accept=".xlsx, .xls" />
+      <button onclick="processExcel()">Leer Archivo</button>
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Dirección</th>
+            <th>Latitud</th>
+            <th>Longitud</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
